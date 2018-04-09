@@ -23,7 +23,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
-
+	
+	
   </head>
 <style>
 .emailid{
@@ -159,7 +160,16 @@ font-size:30px;
 .mb-3, .my-3 {
     margin-bottom: 0.3rem!important;
 }
-
+.visitor-count-text{
+color:white;
+font-size:12px;
+padding-right:10px;
+}
+.visitor-count{
+    top: 85px;
+    position: relative;
+    text-align: left;
+}
 @media only screen and (max-width: 960px) {
     .list-icons{
 	text-align:center;
@@ -191,6 +201,11 @@ margin-right:0px;
 }
 .mb-5, .my-5 {
     margin-bottom: 1.5rem!important;
+}
+.visitor-count{
+    top: 0;
+    padding-top:15px;
+    text-align: left;
 }
 }
 </style>
@@ -234,7 +249,12 @@ margin-right:0px;
 		  <li class="nav-item">
             <a href="img/PrabhuTeja-Resume.pdf" target="_blank" class="nav-link js-scroll-trigger btn-download-resume" download><i class="fa fa-download fa-lg"></i>&nbsp; &nbsp;Download Resume</a>
           </li>
+		  <li class=" nav-item visitor-count">
+		  <span class="visitor-count-text">Visitors Count:</span>
+            <img src='http://www.hit-counts.com/counter.php?t=MTQyNjgzMg==' border='0' alt='Visitor Counter'>
+          </li>
         </ul>
+		
       </div>
     </nav>
 
@@ -247,6 +267,7 @@ margin-right:0px;
           <span class="qualification">MCA</span>
 		  </h1>
 		  <span class="domain">UI UX Developer</span>
+		  
           <div class="subheading mb-5"><a class="contact-no" href="tel:+919849736478"><i class="fa fa-phone"></i> &nbsp; (+91) 98497-36478</a><br/>
             <a href="mailto:prabhuteja143@email.com" class="emailid"><i class="fa fa-envelope"></i> &nbsp;prabhuteja143@email.com</a>
           </div>
@@ -521,7 +542,7 @@ margin-right:0px;
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
@@ -532,7 +553,10 @@ function scrollFunction() {
 function topFunction() {
 $('html, body').animate({scrollTop:0}, 900);
     }
+	
 </script>
-  </body>
+
+
+</body>
 
 </html>
