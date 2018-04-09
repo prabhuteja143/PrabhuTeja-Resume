@@ -38,11 +38,21 @@ color:#222;
 .programming-lang-icons{
 cursor: pointer;
 font-size:115px;
+display: inline-grid;
+text-align: center;
 }
 .qualification{
 font-size:50px;
+color:#868e96;
 }
-
+.technolgy-icon-text{
+font-size:16px;
+font-weight:700;
+margin-bottom:15px;
+}
+.programming-lang-icons:hover{
+color:#007dc5;
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -100,9 +110,8 @@ text-transform:capitalize;
 
 .btn-download-resume{
 margin-top:15px;
-margin-bottom:15px;
-padding:12px;
 background-color:#00639e;
+padding:5px;
 border-radius:5px;
 box-shadow: 1px 2px 3px rgba(0,0,0,.3);
 }
@@ -110,6 +119,80 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.3);
 background-color:#0b3853;
 }
 
+
+.img-circle{
+border-radius:50%;
+border:3px solid rgba(255,255,255,.2);
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1rem;
+    line-height: 0;
+    background-color: transparent;
+    border:transparent;
+    border-radius: 0px;
+}
+.navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: transparent;
+	outline:none;
+}
+.navbar-toggler:hover {
+    color: rgba(255,255,255,.5);
+    border-color: transparent;
+	outline:none;
+}
+
+.navbar-toggler:focus {
+    color: rgba(255,255,255,.5);
+    border-color: transparent;
+	outline:none;
+}
+.navbar-toggler:active {
+    color: rgba(255,255,255,.5);
+    border-color: transparent;
+	outline:none;
+}
+.domain{
+font-size:30px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 0.3rem!important;
+}
+
+@media only screen and (max-width: 960px) {
+    .list-icons{
+	text-align:center;
+	}
+	h1{
+    font-size: 3.8rem;
+    line-height: 3.5rem;
+	}
+	.qualification{
+	font-size:25px;
+	color:#868e96;
+	}
+	.domain{
+display:none;
+}
+.resume-date{
+margin-bottom:1rem;
+}
+section.resume-section {
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 5rem!important;
+    padding-bottom: 5rem!important;
+}
+.list-inline-item:not(:last-child){
+margin-right:0px;
+}
+.list-social-icons a .fa-lg {
+    font-size: 1rem;
+}
+.mb-5, .my-5 {
+    margin-bottom: 1.5rem!important;
+}
+}
 </style>
   
   
@@ -120,7 +203,7 @@ background-color:#0b3853;
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Prabhu Teja Katakam</span>
+        <span class="d-block d-lg-none"><img src="img/profile.jpg" class="img-circle" alt="Prabhu Teja Katakam" width="45px" height="45px"/>&nbsp; &nbsp;UI UX Developer</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" title="Prabhu Teja" alt="Prabhu Teja KatakamS">
         </span>
@@ -163,8 +246,9 @@ background-color:#0b3853;
             <span class="text-primary">Katakam,</span>
           <span class="qualification">MCA</span>
 		  </h1>
-          <div class="subheading mb-5"><a class="contact-no" href="tel:+919849736478">(+91) 98497-36478</a> &nbsp;&nbsp;
-            <a href="mailto:prabhuteja143@email.com" class="emailid">prabhuteja143@email.com</a>
+		  <span class="domain">UI UX Developer</span>
+          <div class="subheading mb-5"><a class="contact-no" href="tel:+919849736478"><i class="fa fa-phone"></i> &nbsp; (+91) 98497-36478</a><br/>
+            <a href="mailto:prabhuteja143@email.com" class="emailid"><i class="fa fa-envelope"></i> &nbsp;prabhuteja143@email.com</a>
           </div>
           <p class="mb-5">I am Looking for a job, where I can display my skills and knowledge to contribute towards growth of an organization. Simultaneously work towards the fulfillment of career goals and widen my knowledge through gaining experience in this rapidly changing technical world.</p>
           <ul class="list-inline list-social-icons mb-0">
@@ -260,8 +344,7 @@ background-color:#0b3853;
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Acharya Nagarjuna University</h3>
               <div class="subheading mb-3">Master of Computer Applications</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>CGPA: 8.0</p>
+              <p>CGPA: 7.5</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">Oct 2014 - Aug 2017</span>
@@ -311,53 +394,53 @@ background-color:#0b3853;
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li title="HTML5" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-html5"></i>
+              <i class="devicons devicons-html5"></i><span class="technolgy-icon-text">HTML5</span>
             </li>
             <li title="CSS3" class="list-inline-item programming-lang-icons">
-              <i  class="devicons devicons-css3"></i>
+              <i  class="devicons devicons-css3"></i><span class="technolgy-icon-text">CSS3</span>
             </li>
 			<li title="Bootstrap" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-bootstrap"></i>
+              <i class="devicons devicons-bootstrap"></i><span class="technolgy-icon-text">Bootstrap</span>
             </li>
             <li title="JavaScript" class="list-inline-item programming-lang-icons ">
-              <i class="devicons devicons-javascript"></i>
+              <i class="devicons devicons-javascript"></i><span class="technolgy-icon-text">JavaScript</span>
             </li>
             <li title="JQuery" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-jquery"></i>
+              <i class="devicons devicons-jquery"></i><span class="technolgy-icon-text">JQuery</span>
             </li>
 			  
             <li title="SASS" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-sass"></i>
+              <i class="devicons devicons-sass"></i><span class="technolgy-icon-text">Saas</span>
             </li>
             <li title="LESS" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-less"></i>
+              <i class="devicons devicons-less"></i><span class="technolgy-icon-text">Less</span>
             </li>
             <li title="Adobe Photoshop" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-photoshop"></i>
+              <i class="devicons devicons-photoshop"></i><span class="technolgy-icon-text">Adobe<br/>Photoshop</span>
             </li>
             <li title="Adobe Illustrator" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-illustrator"></i>
+              <i class="devicons devicons-illustrator"></i><span class="technolgy-icon-text">Adobe<br/>Illustrator</span>
             </li>
             <li title="Adobe Dreamweaver" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-dreamweaver"></i>
+              <i class="devicons devicons-dreamweaver"></i><span class="technolgy-icon-text">Adobe<br/>Dreamweaver</span>
             </li>
 			<li title="JAVA" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons devicons-java"></i>
+              <i class="devicons devicons devicons-java"></i><span class="technolgy-icon-text">Java</span>
             </li>
             <li title="Dot Net" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons devicons-dotnet"></i>
+              <i class="devicons devicons devicons-dotnet"></i><span class="technolgy-icon-text">.Net</span>
             </li>
 			<li title="AngularJS" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons devicons-angular"></i>
+              <i class="devicons devicons devicons-angular"></i><span class="technolgy-icon-text">AngularJS</span>
             </li>
 			<li title="ReactJS" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons devicons-react"></i>
+              <i class="devicons devicons devicons-react"></i><span class="technolgy-icon-text">ReactJS</span>
             </li>
             <li title="NodeJS" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-nodejs"></i>
+              <i class="devicons devicons-nodejs"></i><span class="technolgy-icon-text">NodeJS</span>
             </li>
 			<li title="Atom" class="list-inline-item programming-lang-icons">
-              <i class="devicons devicons-atom"></i>
+              <i class="devicons devicons-atom"></i><span class="technolgy-icon-text">Atom</span>
             </li>
           </ul>
 
@@ -372,9 +455,9 @@ background-color:#0b3853;
             <li>
               <i class="fa-li fa fa-check"></i>
               Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
+            <!-- <li> -->
+              <!-- <i class="fa-li fa fa-check"></i> -->
+              <!-- Agile Development &amp; Scrum</li> -->
           </ul>
         </div>
       </section>
@@ -382,7 +465,7 @@ background-color:#0b3853;
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. I enjoy mountain biking, free climbing, and kayaking.</p>
+          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
           <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
         </div>
       </section>
@@ -396,15 +479,28 @@ background-color:#0b3853;
               Google Analytics Certified Developer</li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist</li>
+              Mobile Web Specialist - Google Certification</li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
               1<sup>st</sup>
-              Place -Miracle Software Systems, MEANHACK Hackton-2016</li>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
               1<sup>st</sup>
-              Place - Satish Dawan Space Reaserch Center - Tech competition 2016 (IoT Project)</li        
+              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2<sup>nd</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+            <li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - James Buchanan High School - Hackathon 2006</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              3<sup>rd</sup>
+              Place - James Buchanan High School - Hackathon 2005</li>
           </ul>
         </div>
       </section>
